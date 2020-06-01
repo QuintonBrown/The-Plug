@@ -1,0 +1,551 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  
+  }
+  
+  
+  /* START MOBILE */
+  @media (max-width: 414px) and (min-width: 320px) {
+    .slider {
+      height: 50vh;
+      width: 100vw;
+    }
+    nav {
+      align-items: center;
+      max-width: 100vw;
+    }
+    .logo {
+      height: 80px;
+      width: 80px;
+      margin: 0px;
+      float: left;
+      padding-right: 5px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+      max-width: 100vw;
+      align-items: center;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      }
+    a:visited {
+      text-decoration: none;
+      }
+      .active {
+        background-color: green;
+      }
+       /* Home Page */
+       .about-us {
+         padding-top: 10px;
+        font-weight: bold;
+        height: 40vh;
+        width: 100vw;
+        
+      }
+      .about-us-head {
+        font-size: 20px;
+        color: green;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .about-us-text {
+        font-size: 15px;
+        text-align: center;
+      }
+      .featured-item {
+        height: 60vh;
+        width: 100vw;
+        border: 1px solid black;
+        display: flex;
+        margin: auto;
+        padding-bottom: 30px;
+      }
+      .testimony {
+        display: grid;
+        grid-template-columns: 100vw;
+        margin: auto;
+      }
+      .testimony_container_pic {
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        margin: auto;
+      }
+      
+      .testimony_container_pic_name {
+        font-size: 20px;
+        text-align: center;
+      }
+      .testimony_container_pic_text {
+        text-align: center;
+        font-size: 15px;
+      }
+    /* Product Grid */
+    .container {
+      display: grid;
+      grid-template-columns: 100vw;
+      height: 50vh;
+    }
+    .container__image {
+      margin: auto;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 0;
+      height: 100%;
+    }
+    img {
+      height: 20vh;
+      width: 30vw;
+    }
+    .price {
+      font-size: large;
+      margin-top: 10px;
+    }
+    .space{
+      padding:3.5px;
+    }
+    .contact-form{
+      color:white;
+      align-content:center;
+      border:1px solid green;
+      background-color:green;
+      width:90vw;
+      margin:50px auto;
+      font-family:arial;
+      font-size:20px;
+      padding-right: 5px;
+    }
+    input, textarea{
+      width:100%
+    }
+    .button{
+      border:0px;
+      width:50vw;
+      margin: 5px 70px;
+    }
+    .form-input{
+      font-size:14pt;
+    }
+    footer{
+      color:white;
+      background-color: black;
+      width:100vw;
+      
+      
+  }
+      
+    .copyright,
+    .footer__products {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .footer__products {
+      margin-top: 7600px;
+    }
+  
+    footer a {
+     color:green;
+    }
+  
+    footer a:visited{
+      color:green;
+    }
+  }
+  /* END MOBILE */
+  
+  @media (max-width: 768px) and (min-width: 415px) {
+    .slider {
+      height: 60vh;
+      width: 100vw;
+    }
+    nav {
+      align-items: center;
+      max-width: 100vw;
+    }
+    .logo {
+      height: 100px;
+      width: 100px;
+      margin: 0px;
+      float: left;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+      max-width: 100vw;
+      align-items: center;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      }
+    a:visited {
+      text-decoration: none;
+      }
+      .active {
+        background-color: green;
+      }
+     /* Home Page */
+     .about-us {
+      font-weight: bold;
+      height: 40vh;
+      width: 90vw;
+      margin: 45px;
+    }  .about-us-head {
+      font-size: 60px;
+      color: green;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .about-us-text {
+      font-size: 30px;
+      text-align: center;
+    }
+    .featured-item {
+      height: 60vh;
+      width: 100vw;
+      border: 1px solid black;
+      display: flex;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+    .testimony {
+      display: grid;
+      grid-template-columns: 100vw;
+      margin: auto;
+      
+    }
+    .testimony_container {
+      margin: auto;
+    }
+    .testimony_container_pic {
+      display: flex;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+      margin: auto;  
+    }
+  
+    .testimony_container_pic_name {
+      font-size: 40px;
+      text-align: center;
+    }
+    .testimony_container_pic_text {
+      text-align: center;
+      font-size: 30px;
+    }
+    /* Product Grid */
+    .container {
+      display: grid;
+      grid-template-columns: 33vw 33vw 33vw;
+      height: 50vh;
+      padding-top: 40px;
+      margin: 5px;
+    }
+    .container__image {
+      margin: auto;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 0;
+      height: 100%;
+    }
+    img {
+      height: 20vh;
+      width: 30vw;
+    }
+    .price {
+      font-size: large;
+    }
+    .space{
+      padding:3.5px;
+    }
+    .contact-form{
+      color:white;
+      align-content:center;
+      border:10px solid black;
+      background-color:green;
+      width:70vw;
+      height: 50vh;
+      margin:50px auto;
+      font-family:arial;
+      font-size:20px;
+    }
+    input, textarea{
+      width:100%
+    }
+    .button{
+      border:0px;
+      width:50vw;
+      margin: 5px 60px;
+    }
+    .form-input{
+      font-size:14pt;
+    }
+    footer{
+      color:white;
+      background-color: black;
+      width:100vw;
+      
+      
+  }
+      
+    .copyright,
+    .footer__products {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .footer__products {
+      margin-top: 3650px;
+    }
+  
+    footer a {
+     color:green;
+    }
+  
+    footer a:visited{
+      color:green;
+    }
+  }
+  
+  @media (max-width: 2560px) and (min-width: 769px) {
+    .slider {
+      height: 80vh;
+      width: 100vw;
+    }
+    nav {
+      align-items: center;
+      max-width: 100vw;
+    }
+    .logo {
+      height: 100px;
+      width: 100px;
+      margin: 0px;
+      float: left;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+      max-width: 100vw;
+      align-items: center;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      height: 100%;
+      font-size: 20px;
+      }
+    a:visited {
+      text-decoration: none;
+      }
+    .navbutton:hover {
+      background-color: rgb(184, 187, 184);
+      color: black;
+      transform: scale(1.3);
+    }
+    .active {
+      background-color: green;
+    }
+    /* Home Page */
+    .about-us {
+      
+      font-weight: bold;
+      height: 55vh;
+      width: 70vw;
+      margin: 250px;
+    }
+    .about-us-head {
+      font-size: 60px;
+      color: green;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .about-us-text {
+      font-size: 40px;
+      text-align: center;
+    }
+    .featured-item {
+      height: 60vh;
+      width: 60vw;
+      border: 1px solid black;
+      display: flex;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+  
+    .testimony {
+      display: grid;
+      grid-template-columns: 100vw;
+      margin: auto;
+      
+    }
+    .testimony_container {
+      margin: auto;
+    }
+    .testimony_container_pic {
+      display: flex;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+      margin: auto;  
+    }
+    .testimony_container_pic_name {
+      font-size: xx-large;
+      text-align: center;
+    }
+    .testimony_container_pic_text {
+      text-align: center;
+      font-size: x-large;
+    }
+    /* Product Grid */
+    .container {
+      display: grid;
+      grid-template-columns: 20vw 20vw 20vw 20vw;
+      height: 100vh;
+      grid-gap: 20px;
+      justify-content: center;
+      padding-top: 40px;
+  
+  
+    }
+    .container__image {
+      margin: auto;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 0;
+      height: 100%;
+      padding: 0px 30px;
+      margin: 10px 5px;
+    }
+    .container__image:hover {
+    transform: scale(1.1);
+    background-color: green;
+    color: white;
+  }
+    h2 {
+      height: 40px;
+      }
+    p {
+      font-size: 15px;
+      padding-bottom: 10px;
+      margin: auto;
+    }
+    img {
+      height: 25vh;
+      width: 10vw;
+    }
+    .price {
+      font-size: large;
+      margin-top: 10px;
+    }
+  
+  
+    .space{
+      padding:25px;
+    }
+    .contact-form{
+      color:white;
+      align-content:center;
+      border:10px solid black;
+      background-color:green;
+      width:50vw;
+      height: 75vh;
+      margin:50px auto;
+      font-family:arial;
+      font-size:20px;
+    }
+    input, textarea{
+      width:100%;
+    }
+    .button{
+      border:0px;
+      width:30vw;
+      margin: 0px 150px;
+    }
+    .form-input{
+      font-size:14pt;
+    }
+  
+    footer{
+      color:white;
+      background-color: black;
+      width:100vw;
+    }
+      
+    .copyright,
+    .footer__products {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .footer__products {
+      margin-top: 2800px;
+    }
+  
+    footer a {
+     color:green;
+    }
+  
+    footer a:visited{
+      color:green;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  
+  

@@ -4,13 +4,14 @@ const items = require('./data/products.json');
 
 
 const Products = () => {
-
+    //set and setState being initialized
     const [products, setProducts] = useState(items)
     const [category, setCategory] = useState("all")
-    const [min, setMin] = useState(0)
-    const [max, setMax] = useState(1100)
+    const [min, setMin] = useState("")
+    const [max, setMax] = useState("")
     //e = event for the value when select changes
     const handleFilterChange = (e, filterType) => {
+        //changes state 
         switch (filterType) {
             case "category":
                 setCategory(e.target.value)
@@ -21,9 +22,10 @@ const Products = () => {
             case "max":
                 setMax(e.target.value)
                 break;
+            default: break;
         }
     }
-
+//initial render then updates when state/criteria is changed
     useEffect(() => {
         let filteredProducts = items;
 
@@ -34,18 +36,16 @@ const Products = () => {
             filteredProducts = filteredProducts.filter(product => product.price > min)
         }
         if (max !== "") {
-            if (max === "") {
-                return setProducts(items)
-            };
             filteredProducts = filteredProducts.filter(product => product.price < max)
         }
         setProducts(filteredProducts)
+        //variable being listened for change
     }, [category, min, max])
     return (
         <React.Fragment>
             <form className="filter">
                 <label for="category">Choose a category:</label>
-                <select name="category" id="category" onChange={(e) => handleFilterChange(e, "category")}>
+                <select name="category" id="category" onChange={(e) => handleFilterChange(e, "category")}> {/*listens for when input field is changed*/}
                     <option value="all">All</option>
                     <option value="jacket">Jackets</option>
                     <option value="jean">Jeans</option>
@@ -66,11 +66,12 @@ const Products = () => {
                 <input type="number" name="maxPrice" onChange={(e) => handleFilterChange(e, "max")} placeholder="Max Price" />
             </form>
             <div className="master--card">
+                {/*state*/} 
                 {products.map((item, key) => {
                     return (
                         <div className="card">
                             <h2 className="title">{item.title}</h2>
-                            <img src={item.cover} alt={item.alt} />
+                            <img src={item.cover} alt={item.title} />
 
                             <p>Polo Ralph Lauren</p>
                             <p className="description">{item.description}</p>

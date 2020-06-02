@@ -4,7 +4,7 @@
   justify-content: center;
   font-size: 1.5rem;
   padding: 20px;
-  background-color: red;
+  background-color: green;
 }
 input, select {
   font-size: 1rem;
@@ -20,7 +20,7 @@ input, select {
 
 .card {
   border: 1px solid green;
-  height: 50vh;
+  height: 70vh;
   width: 20vw;
   margin: auto;
   margin-top: 30px;

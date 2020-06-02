@@ -23,7 +23,7 @@ const Products = () => {
                 break;
         }
     }
-
+    //lifecyles
     useEffect(() => {
         let filteredProducts = items;
 
@@ -41,5 +41,5 @@ const Products = () => {
         }
         setProducts(filteredProducts)
     }, [category, min, max]);
-    
+}  
     export default Products;

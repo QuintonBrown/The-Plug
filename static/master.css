@@ -494,7 +494,7 @@
   
   
     .space{
-      padding:25px;
+      padding:5px;
     }
     .contact-form{
       color:white;
@@ -502,7 +502,7 @@
       border:10px solid black;
       background-color:green;
       width:50vw;
-      height: 75vh;
+      height: 70vh;
       margin:50px auto;
       font-family:arial;
       font-size:20px;
